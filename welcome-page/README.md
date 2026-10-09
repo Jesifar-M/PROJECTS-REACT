@@ -58,7 +58,7 @@ npm start
 
 Open the application in your browser:
 
-http://localhost:3000
+http://localhost:3000/
 
 To view the console message, open the browser Developer Tools using **F12** and select the **Console** tab.
 
