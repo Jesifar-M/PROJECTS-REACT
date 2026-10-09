@@ -1,6 +1,6 @@
 # Welcome Page React App
 
-A simple React application that displays a welcome message and shows a message in the browser console when the page loads for the first time.
+A simple React application that displays a welcome message on the screen and shows a message in the browser console when the page loads for the first time.
 
 ## Features
 
@@ -10,7 +10,8 @@ A simple React application that displays a welcome message and shows a message i
 * Displays the console message:
   `Welcome message displayed.`
 * The console message runs only once when the page loads.
-* No buttons or user interaction are used.
+* No button is included.
+* No user interaction is required.
 
 ## Technologies Used
 
@@ -21,7 +22,7 @@ A simple React application that displays a welcome message and shows a message i
 
 ## How It Works
 
-When the page loads, the screen displays:
+When the application loads, the browser displays:
 
 Hello, user! Welcome to our site.
 
@@ -29,11 +30,11 @@ The browser console displays:
 
 Welcome message displayed.
 
-The `useEffect()` hook uses an empty dependency array `[]`, so the console message runs only once when the component is initially loaded.
+The `useEffect()` hook uses an empty dependency array `[]`, so the console message runs only when the component is initially loaded.
 
 ## How to Run
 
-Open the project folder in the terminal:
+Open the project folder in PowerShell or Command Prompt:
 
 cd C:\REACT-Node.js\welcome-page
 
@@ -45,11 +46,13 @@ Start the React application:
 
 npm start
 
-Open the application in your browser:
+The application runs on:
 
 http://localhost:3000
 
-To view the console message, open the browser Developer Tools using **F12** and select the **Console** tab.
+Open the following link in your browser:
+
+**http://localhost:3000**
 
 ## Expected Browser Output
 
@@ -57,7 +60,11 @@ Hello, user! Welcome to our site.
 
 ## Expected Console Output
 
+Open the browser Developer Tools using **F12** and select the **Console** tab.
+
 Welcome message displayed.
+
+The console message should appear only once when the page loads.
 
 ## Project Structure
 
@@ -73,8 +80,8 @@ welcome-page
 
 ## React Concepts Used
 
-* `useEffect()`
 * Functional Component
+* `useEffect()`
 * Initial component rendering
 * Browser Console
 * React component lifecycle
