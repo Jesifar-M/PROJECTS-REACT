@@ -22,52 +22,63 @@ A simple React application that displays a welcome message on the screen and sho
 
 ## How It Works
 
-When the application loads, the browser displays:
+When the page loads, the screen displays:
 
+```text
 Hello, user! Welcome to our site.
+```
 
 The browser console displays:
 
+```text
 Welcome message displayed.
+```
 
-The `useEffect()` hook uses an empty dependency array `[]`, so the console message runs only when the component is initially loaded.
+The `useEffect()` hook uses an empty dependency array `[]`, so the console message runs only once when the component is initially loaded.
 
 ## How to Run
 
-Open the project folder in PowerShell or Command Prompt:
+Open the project folder:
 
+```text
 cd C:\REACT-Node.js\welcome-page
+```
 
 Install the required packages:
 
+```text
 npm install
+```
 
 Start the React application:
 
+```text
 npm start
+```
 
-The application runs on:
+Open the application in your browser:
 
 http://localhost:3000
 
-Open the following link in your browser:
-
-**http://localhost:3000**
+To view the console message, open the browser Developer Tools using **F12** and select the **Console** tab.
 
 ## Expected Browser Output
 
+```text
 Hello, user! Welcome to our site.
+```
 
 ## Expected Console Output
 
-Open the browser Developer Tools using **F12** and select the **Console** tab.
-
+```text
 Welcome message displayed.
+```
 
 The console message should appear only once when the page loads.
 
 ## Project Structure
 
+```text
 welcome-page
 ├── public
 ├── src
@@ -77,6 +88,7 @@ welcome-page
 ├── package.json
 ├── package-lock.json
 └── README.md
+```
 
 ## React Concepts Used
 
