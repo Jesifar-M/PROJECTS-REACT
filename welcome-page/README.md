@@ -33,6 +33,10 @@ The `useEffect()` hook uses an empty dependency array `[]`, so the console messa
 
 ## How to Run
 
+Open the project folder in the terminal:
+
+cd C:\REACT-Node.js\welcome-page
+
 Install the required packages:
 
 npm install
@@ -45,7 +49,15 @@ Open the application in your browser:
 
 http://localhost:3000
 
-To view the console message, open the browser developer tools using **F12** and select the **Console** tab.
+To view the console message, open the browser Developer Tools using **F12** and select the **Console** tab.
+
+## Expected Browser Output
+
+Hello, user! Welcome to our site.
+
+## Expected Console Output
+
+Welcome message displayed.
 
 ## Project Structure
 
@@ -59,9 +71,10 @@ welcome-page
 ├── package-lock.json
 └── README.md
 
-## React Concept Used
+## React Concepts Used
 
 * `useEffect()`
 * Functional Component
 * Initial component rendering
 * Browser Console
+* React component lifecycle
