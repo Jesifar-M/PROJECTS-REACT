@@ -1,70 +1,122 @@
-# Getting Started with Create React App
+# User Authentication App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A simple React.js authentication application that allows users to register and log in using a REST API.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+* User Registration
+* User Login
+* Name, Email and Password fields
+* Registration success alert
+* Automatic navigation to Login page after registration
+* Login success alert
+* Login error message
+* Displays login token in the browser console
+* Bootstrap responsive design
 
-### `npm start`
+## Technologies Used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+* React.js
+* JavaScript
+* Bootstrap
+* React Router DOM
+* REST API
+* HTML
+* CSS
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## API Endpoints
 
-### `npm test`
+### Register
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+**POST**
+`https://worksheet-auth.mashupstack.com/register`
 
-### `npm run build`
+Request body:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```json
+{
+  "user_name": "John Doe",
+  "email": "johndoe@gmail.com",
+  "password": "Password123"
+}
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Login
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+**POST**
+`https://worksheet-auth.mashupstack.com/login`
 
-### `npm run eject`
+Request body:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```json
+{
+  "email": "johndoe@gmail.com",
+  "password": "Password123"
+}
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Project Structure
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```text
+auth-app/
+│
+├── public/
+│
+├── src/
+│   ├── App.js
+│   ├── Register.js
+│   ├── Login.js
+│   └── index.js
+│
+├── package.json
+└── README.md
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Installation
 
-## Learn More
+Open CMD and run:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```bash
+cd C:\REACT-Node.js\auth-app
+npm install
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+If required, install the packages:
 
-### Code Splitting
+```bash
+npm install bootstrap react-router-dom
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Run the Project
 
-### Analyzing the Bundle Size
+```bash
+npm start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+The application will open in the browser.
 
-### Making a Progressive Web App
+## How It Works
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Registration
 
-### Advanced Configuration
+1. Enter Name, Email and Password.
+2. Click **Register**.
+3. The details are sent to the Register API.
+4. If registration is successful, an **"Registration Successful"** alert is displayed.
+5. The user is automatically redirected to the Login page.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### Login
 
-### Deployment
+1. Enter the registered Email and Password.
+2. Click **Login**.
+3. The details are sent to the Login API.
+4. If login is successful, a **"Successfully Logged In"** alert is displayed.
+5. The received authentication token is printed in the browser console.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Error Handling
 
-### `npm run build` fails to minify
+If registration or login fails, an error message is displayed on the page.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Author
+
+Jesifar M
