@@ -1,70 +1,144 @@
-# Getting Started with Create React App
+# 📚 Book Manager App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A simple React-based Book Manager application for a small library.
 
-## Available Scripts
+This application connects to a real REST API and allows users to create, view, edit, and delete books.
 
-In the project directory, you can run:
+## 🚀 Features
 
-### `npm start`
+* Add a new book
+* View all books
+* Edit book details
+* Delete a book
+* Success message after adding/updating/deleting
+* Responsive design using Bootstrap
+* Real API integration
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🛠️ Technologies Used
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+* React.js
+* JavaScript
+* Bootstrap
+* HTML
+* CSS
+* REST API
+* Fetch API
 
-### `npm test`
+## 📋 Book Fields
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Each book contains:
 
-### `npm run build`
+* Title
+* Author
+* Published Year
+* Genre
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🔗 API Endpoints
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Get All Books
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```text
+GET https://worksheet-library.mashupstack.com/books
+```
 
-### `npm run eject`
+### Create Book
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```text
+POST https://worksheet-library.mashupstack.com/books
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Update Book
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```text
+PUT https://worksheet-library.mashupstack.com/books/{id}
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Delete Book
 
-## Learn More
+```text
+DELETE https://worksheet-library.mashupstack.com/books/{id}
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## ▶️ How to Run
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### 1. Clone the project
 
-### Code Splitting
+```bash
+git clone <your-github-repository-url>
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### 2. Go to the project folder
 
-### Analyzing the Bundle Size
+```bash
+cd book-manager
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### 3. Install dependencies
 
-### Making a Progressive Web App
+```bash
+npm install
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### 4. Install Bootstrap
 
-### Advanced Configuration
+```bash
+npm install bootstrap
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### 5. Start the application
 
-### Deployment
+```bash
+npm start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+The application will run at:
 
-### `npm run build` fails to minify
+```text
+http://localhost:3000
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 📁 Project Structure
+
+```text
+book-manager
+│
+├── public
+│
+├── src
+│   ├── App.js
+│   ├── BookForm.js
+│   └── index.js
+│
+├── package.json
+├── package-lock.json
+└── README.md
+```
+
+## 🔄 CRUD Operations
+
+### Create
+
+Users can enter the book details in the form and click **Add Book**.
+
+### Read
+
+All books are displayed in a table with:
+
+* ID
+* Title
+* Author
+* Published Year
+* Genre
+* Actions
+
+### Update
+
+Click **Edit**, modify the book details, and click **Update Book**.
+
+### Delete
+
+Click **Delete** to remove a book from the library.
+
+## ✅ Expected Result
+
+The application displays the book collection and lets users manage books through the available CRUD operations.
